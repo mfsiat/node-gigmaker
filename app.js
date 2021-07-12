@@ -17,6 +17,9 @@ const app = express();
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+// Set Static folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => res.send('INDEX'));
 
 // Gig routes
