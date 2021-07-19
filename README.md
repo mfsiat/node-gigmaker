@@ -4,6 +4,9 @@
 
 ## Usage
 
+- **`npm install`**
+- **`npm run dev`**
+
 ## Technologies
 
 - Sequelize ( ORM )
